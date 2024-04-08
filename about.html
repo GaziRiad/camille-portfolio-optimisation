@@ -214,5 +214,17 @@
     <script>
       AOS.init();
     </script>
+    <script>
+      // Please copy-past this script inside the body tag at the bottom of each page you want to have a passcode!
+      const password = prompt("Enter the password to access this page:");
+
+      const correctPassword = "123456789"; // Replace with the actual password
+
+      if (password !== correctPassword) {
+        // Password is incorrect, display an error message and redirect
+        alert("Incorrect password. You do not have access to this page.");
+        window.location.href = "index.html"; // Redirect to homepage
+      }
+    </script>
   </body>
 </html>
